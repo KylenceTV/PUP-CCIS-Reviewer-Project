@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUP CCIS Reviewer</title>
+    <link rel="icon" href="../IMAGES/PUPCCISREVIEWER_LOGO.png">
+    <link rel="stylesheet" href="SIGNUP.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="inner-box">
+            <h1>Sign up</h1>
+            <hr class="divider">
+            <p class="error-message"></p>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Middle Initial">
+            <input type="text" placeholder="Last Name">
+            <div class="small-input-group">
+                <select id="Year" name="Year">
+                    <option>Year</option>
+                    <option value="FY">First Year</option>
+                    <option value="SY">Second Year</option>
+                    <option value="TY">Third Year</option>
+                    <option value="FTY">Fourth Year</option>
+                </select>
+                <select id="section" name="section">
+                    <option>Section</option>
+                    <option value="FY">1</option>
+                    <option value="SY">1N</option>
+                    <option value="TY">2</option>
+                    <option value="FTY">2N</option>
+                    <option value="FTY">3</option>
+                    <option value="FTY">4</option>
+                    <option value="FTY">5</option>
+                </select>
+            </div>
+            <input type="email" placeholder="PUP Webmail">
+            <input type="text" placeholder="Student Number">
+            <div class="pass-input-group">
+                <input type="password" class="pass-input" placeholder="Password">
+                <input type="password" class="pass-input" placeholder="Confirm Password">
+            </div>
+            <div class="toggle-buttons">
+                <label>
+                    <input type="radio" name="course" value="BSIT" checked>
+                    <span>BSIT</span>
+                </label>
+                <label>
+                    <input type="radio" name="course" value="BSCS">
+                    <span>BSCS</span>
+                  </label>
+            </div>
+            <button class="signup-button">Sign up</button>
+            <hr class="divider-between">
+            <a href="LOGIN.html" class="login-link"> Back to Log in</a>
+        </div>
+    </div>
+    
+</body>
+</html>

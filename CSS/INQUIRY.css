@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'PoppinsBold';
+    src: url('../FONTS/Poppins-Bold.ttf');
+  }
+  
+  @font-face {
+    font-family: 'PoppinsReg';
+    src: url('../FONTS/Poppins-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Aileron';
+    src: url('../FONTS/Aileron-Bold.otf');
+  }
+
+
+/* Reset some default styling for better cross-browser consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#preloader{
+    background: #fff url('../IMAGES/PUPCCISLAUNCHING.gif') no-repeat center center;   
+    background-size: 30%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#preloader.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+html, body {
+    height: 100%; /* Use 100% to allow the hero section to take up full height */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Body Styling */
+body {
+    font-family: PoppinsReg;
+    background-color: #f5f5f5;
+    background-image: url('../IMAGES/INQUIRY_PAGE.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.logo img {
+    width: 130px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 5%;
+}
+
+.divider {
+    border: none; 
+    border-top: 2px solid #fff; 
+    margin: 10px auto; 
+    width: 90%;
+}
+
+.container {
+    background-color: transparent;
+    padding: 20px;
+    width: 100%;
+    max-width: 1040px;
+    border-radius: 10px;
+    margin-left: 75px;
+}
+
+h1 {
+    font-family: PoppinsReg;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+label {
+    font-family: PoppinsReg;
+    color: #fff;    
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.required {
+    font-family: PoppinsReg;
+    color: #FFD700;
+}
+
+input, textarea {
+    font-family: PoppinsReg;
+    width: 1000px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    font-family: PoppinsReg;
+    resize: none;
+}
+
+.title {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+
+.exit-button {
+    font-family: PoppinsReg;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.exit-button {
+    font-family: PoppinsReg;
+    background-color: #FFD700;
+    color: #7C0000;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+button {
+    font-family: PoppinsReg;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.attach-button {
+    font-family: PoppinsReg;
+    background-color: #FFD700;
+    color: #7C0000;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.create-button {
+    font-family: PoppinsReg;
+    background-color: #FFD700;
+    color: #7C0000;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.cancel-button {
+    font-family: PoppinsReg;
+    background-color: #ffffff;
+    color: #7C0000;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.8;
+}

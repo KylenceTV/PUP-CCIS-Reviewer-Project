@@ -1,0 +1,335 @@
+/* Fonts */ 
+@font-face {
+    font-family: 'PoppinsBold';
+    src: url('../FONTS/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'PoppinsReg';
+    src: url('../FONTS/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../FONTS/Aileron-Bold.otf');
+} 
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 6rem;
+    margin-right: 200px;
+    font-size: xx-large;
+    background: transparent;
+}
+
+header .logo img {
+    width: 130px;
+    height: auto;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: -30px;
+}
+
+/* Navigation */
+
+header nav ul li a.active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+  }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 7rem;
+    margin-top: 5px;
+    padding-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+    margin-left: -50px;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffca00;
+    visibility: hidden;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+/* Navigation */
+
+/* Body styling */
+body {
+    font-family: PoppinsReg;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+/* Scroll container */
+.scroll-container {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    margin-top: -10%;
+}
+
+/* Slide container */
+.slides {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    flex-direction: column;
+}
+
+/* Individual slide */
+.slide1, .slide3 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-size: cover; /* Ensure the background image covers the entire slide */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+}
+
+.slide2 {
+    width: 100%;
+    min-height: 110vh;
+    display: flex;
+    flex-direction: column;
+    background-size: cover; /* Ensure the background image covers the entire slide */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat;
+}
+
+/* Slide 1 */
+.slide1 {
+    background: url('../IMAGES/ABOUTCCIS_SLIDE1.png') no-repeat center center;
+    background-size: cover;
+}
+
+/* Slide 2 */
+.slide2 {
+    background: url('../IMAGES/ABOUTCCIS_SLIDE2.png') no-repeat center center; /* Ensure the image covers the whole slide */
+    background-size: cover;  /* Cover the entire container */
+}
+
+/* Slide 3 */
+.slide3 {
+    background: url('../IMAGES/ABOUTCCIS_SLIDE3.png') no-repeat center center;
+    background-size: cover;
+}
+
+/* Text content styling */
+.text-content {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    max-width: 50%;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Text adjustments */
+.text-content .header-one {
+    font-family: 'PoppinsReg';
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #fff;
+    margin-left: -800px;
+    margin-top: 20px;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.text-content .header-two {
+    font-family: 'Aileron';
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-left: -800px;
+    margin-top: -15px;
+    transform: translateY(-5px);
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.text-content .header-three {
+    font-family: 'PoppinsBold';
+    font-size: 5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-left: -800px;
+    margin-top: -38px;
+    transform: translateY(-5px);
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.text-content .header-four {
+    font-family: 'PoppinsReg';
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #fff;
+    margin-left: -800px;
+    margin-top: -90px;
+    transform: translateY(-5px);
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+}
+
+.mission-section {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    max-width: 50%;
+    color: #fff;
+    margin-top: 100px;
+    margin-left: -210px;
+    transform: translateY(-5px);
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.mission-section .mission-one {
+    font-family: 'PoppinsReg';
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #fff;
+}
+
+.mission-section ul {
+    font-family: 'PoppinsReg';
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #fff;
+}
+
+.vision-section {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    max-width: 50%;
+    margin-left: 13rem;
+    margin-top: 100px;
+    color: #fff;
+    transform: translateY(-5px);
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+
+.vision-section .vision-one {
+    font-family: 'PoppinsReg';
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #fff;
+}
+
+.vision-section ul {
+    font-family: 'PoppinsReg';
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #fff;
+}
+
+/* Section styling - remove background colors */
+.about-section, .mission-section, .vision-section, .staff-section {
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+
+/* Image styling */
+.image-content img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.container {
+    background-color: #fff;
+    height: 70px;
+    width: 700px;
+    border-radius: 30px;
+    margin-top: -420px;
+}
+
+.container .title{
+    font-family: 'PoppinsBold';
+    font-size: 2.3rem;
+    color: #830404;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/* Staff card styling */
+.staff-card1 {
+    margin-top: px;
+    margin-left: px;
+    text-align: center;
+    font-family: 'PoppinsBold';
+    color: #fff;
+    margin-left: -1050px;
+    margin-top: -200px;
+}
+
+.name1 {
+    font-family: 'PoppinsBold';
+    font-weight: bold;
+    font-size: x-large;
+    color: #fff;
+}
+
+.staff-card2 {
+    text-align: center;
+    font-family: "PoppinsBold";
+    color: #fff;
+    margin-top: -150px;
+}
+
+.name2 {
+    font-family: 'PoppinsBold';
+    font-weight: bold;
+    font-size: x-large;
+    color: #fff;
+}
+
+.staff-card3 {
+    text-align: center;
+    font-family: "PoppinsBold";
+    color: #fff;
+    margin-right: -1050px;
+    margin-top: -150px;
+}
+
+.name3 {
+    font-family: 'PoppinsBold';
+    font-weight: bold;
+    font-size: x-large;
+    color: #fff;
+}

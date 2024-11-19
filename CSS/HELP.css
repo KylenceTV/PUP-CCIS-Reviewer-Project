@@ -1,0 +1,229 @@
+@font-face {
+  font-family: 'PoppinsBold';
+  src: url('../FONTS/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'PoppinsReg';
+  src: url('../FONTS/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url('../FONTS/Aileron-Bold.otf');
+}
+
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: PoppinsReg;
+    background-color: #f5f5f5;
+    background-image: url('../IMAGES/HELP_PAGE.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 6rem;
+    margin-right: 200px;
+    font-size: xx-large;
+    background-color: transparent;
+}
+
+header .logo img {
+    width: 130px;
+    height: auto;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: -30px;
+}
+/* Header */
+
+/*Navigation*/
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 7rem;
+    margin-top: 5px;
+    padding-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+    margin-left: -50px;
+}
+
+nav ul li a.active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffca00;
+    visibility: hidden;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+/*Navigation*/
+
+/*body*/
+.home-content .header-one {
+    font-family: PoppinsReg;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 140px;
+    margin-top: 250px;
+    margin-bottom: 10px;
+    transform: translateY(-5px);
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.home-content .web-description {
+    font-family: PoppinsReg;
+    font-size: 1.1rem;
+    margin-left: 140px;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.home-content .learn-more-button {
+    display: inline-block;
+    padding: .7rem 5rem;
+    background-color: #810503;
+    color: #fff;
+    border-radius: 20px;
+    font-family: PoppinsBold;
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+    margin-left: 240px;
+}
+
+.home-content .learn-more-button:hover {
+    background-color: #690504;
+}
+/*body*/
+
+/*Carousel*/
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+.carousel {
+    position: absolute;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    top: 230px;
+    right: 290px;
+    border-radius: 15%;
+  }
+  
+  .carousel-track-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    display: block;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+  }
+  
+  .carousel-button.left-button {
+    left: 10px;
+  }
+  
+  .carousel-button.right-button {
+    right: 10px;
+  }
+  
+  .carousel-button:focus {
+    outline: none;
+  }
+  
+  .carousel-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .carousel-indicator {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .carousel-indicator.current-slide {
+    background-color: #333;
+  }
+/*Carousel*/
